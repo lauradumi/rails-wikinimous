@@ -1,6 +1,11 @@
+
+<nav class="navbar navbar-light bg-light">
+  <p> <%= link_to "Wikinimous", articles_path %></p>
+</nav>
+
 <ul>
   <% @articles.each do |article| %>
-    <li><%= link_to article.title, article_path(article) %></li>
+    <li class="link"><%= link_to article.title, article_path(article) %></li>
     <p><%= article.content %></p>
   <% end %>
 </ul>
